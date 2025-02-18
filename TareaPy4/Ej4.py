@@ -26,12 +26,11 @@ def generar_password():
             print(password)
         elif opcion=="2":
             longitud = int(input("¿Que longitud quieres?"))
-            abc = "abcdefghijklmnopqrstuvwxyz"
+            abc = "abcdefghijklmnopqrstuvwxyz0123456789"
             password=""
             for i in range(longitud):
-                num=str(random.randint(1,9))
                 password=password+(abc[random.randint(0,len(abc))])
-                password=password+num
+                password=password
             print(password)
 
 generar_password()
