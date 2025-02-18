@@ -29,9 +29,9 @@ def generar_password():
             abc = "abcdefghijklmnopqrstuvwxyz"
             password=""
             for i in range(longitud):
-                numAleatorio=random.randint(1,9)
+                num=str(random.randint(1,9))
                 password=password+(abc[random.randint(0,len(abc))])
-                password=password+numAleatorio
+                password=password+num
             print(password)
 
 generar_password()
